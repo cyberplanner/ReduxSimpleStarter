@@ -17,6 +17,10 @@ module.exports = {
     }]
   },
   resolve: {
+    root: __dirname,
+    alias: {
+      comps: 'src/components/'
+    },
     extensions: ['', '.js', '.jsx']
   },
   devServer: {
@@ -27,3 +31,5 @@ module.exports = {
     fs: 'empty'
   }
 };
+
+
